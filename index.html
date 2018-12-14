@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Number 1</title>
+</head>
+<script>
+	$(document).ready(function(){
+	$('#MainMenuBtnOpen').click(function () {
+	$('#MainMenuUl').toggle(800);
+	});
+	});
+</script>
+<body>
+
+<!----- header ----->
+<div id="header-wrapper">
+	<div class="breadcrumbs"><a href="#">Dashboard</a> > <a href="#">Main</a> > Home</div>
+		<div class="search-content"><input type="text" placeholder="Search" name="search" required><input type="submit" placeholder="Submit" name="submit" required></div>
+</div>
+<!----- header ends ----->
+
+	<!----- body ----->
+	<div id="body-wrapper">
+		<div class="sidebar">
+			<h1>Wiki</h1>
+				<a href="#">Page Operations</a>
+					<a href="#">Browse Space</a>
+						<a href="#">Add Content</a>
+		</div>
+			<div class="content">
+				<div class="main-menu">
+					<a href="#">Welcome Peldi</a> | <a href="#">History</a> | <a href="#">Preferences</a> | <a href="#">Administration</a> | <a href="#">Log Out</a> &nbsp;&nbsp;<i class="fa fa-print"></i>
+				</div>
+				<div id="MainMenu">
+					<img src="menu-btn.png" id="MainMenuBtnOpen">
+						<ul id="MainMenuUl">
+							<div class="responsive-menu responsive-nav">
+								<ul>
+									<li><a href="#">Welcome Peldi</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Preferences</a></li>
+									<li><a href="#">Administration</a></li>
+									<li><a href="#">Log Out</a></li>
+									<i style="margin: 20px 0 0 20px; color: #cccccc;" class="fa fa-print"></i>
+								</ul>
+							</div>
+						</ul>
+				</div>
+
+					<div class="user-content">
+						<span style="color: #cccccc;">Main</span>
+							<h2>Welcome to Our Wiki!</h2>
+								<p>Added by Peldi, last edited by Peldi on Mar 09, 2008 (<a href="#">view changes</a>)</p>
+									<p>welcome to our awesome wiki. A placce for us to share knowledge yadda yadda yadda.</p>
+										<p>You can add images like the one below:</p>
+											<img src="img.png" />
+												<p>And other text lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce odio ipsum, efficitur at massa id, varius sollicitudin neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam vel erat ac urna viverra faucibus. Vivamus in ligula ut ante fringilla convallis eu quis dui. Donec bibendum sed neque vel condimentum. Maecenas ac metus sit amet tellus aliquam sodales non in neque. Suspendisse tristique ultricies erat et sollicitudin.</p>
+													<div class="bottom-content">
+														10 Children | <a href="#">Show Children</a> | <a href="#">View in Hierarchy</a> | <a href="#">Add Child Page</a>
+													</div>
+														<div class="comment-content">
+															<i class="fa fa-clone"> 0 comments <a href="#">Add Comment</a></i>
+														</div>
+					</div>
+			</div>
+    </div>
+	<!----- body ends ----->
+</body>
+</html>
